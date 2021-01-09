@@ -11,5 +11,8 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[id=?]", 'sign-up-link', text: 'Sign up now!'
 
     assert_select "title", full_title
+
+    get signup_path
+    assert_select 'title', full_title('Sign up')
   end
 end
