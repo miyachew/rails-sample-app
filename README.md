@@ -1,10 +1,4 @@
-# Ruby on Rails Tutorial sample application
-
-## License
-
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+# Ruby on Rails sample application
 
 ## Getting started
 
