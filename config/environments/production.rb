@@ -72,11 +72,11 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :address        => ENV['SMTP_HOST'],
-    :port           => '587',
-    :authentication => :plain,
+    :domain         => 'mail.google.com',
+    :port           => 587,
     :user_name      => ENV['SMTP_USERNAME'],
     :password       => ENV['SMTP_PASSWORD'],
-    :domain         => 'heroku.com',
+    :authentication => :plain,
     :enable_starttls_auto => true
   }
 
