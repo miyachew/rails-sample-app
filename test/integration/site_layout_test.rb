@@ -25,10 +25,12 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get root_path
     assert_select "a[href=?]", login_path
     assert_select "a[href=?]", logout_path,count:0
+    assert_select "a[id=?]", 'sign-up-link', text: 'Sign up now!',count:1
 
     log_in_as(@user)
     get root_path
     assert_select "a[href=?]", login_path,count:0
+    assert_select "a[id=?]", 'sign-up-link', text: 'Sign up now!',count:0
 
     assert_select "a[href=?]", root_path, count: 2
     assert_select "a[href=?]", help_path
