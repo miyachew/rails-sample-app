@@ -7,6 +7,11 @@ ruby '3.0.0'
 gem 'rails', '~> 6.1.1'
 gem 'bootstrap-sass', '3.4.1'
 gem 'rexml'
+
+# Image upload validation and image processing
+gem 'active_storage_validations', '0.9.2'
+gem 'image_processing', '1.9.3'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -61,6 +66,7 @@ end
 
 group :production do
   gem 'pg', '1.2.3'
+  gem 'aws-sdk-s3', '1.87.0', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
