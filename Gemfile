@@ -8,9 +8,8 @@ gem 'rails', '~> 6.1.1'
 gem 'bootstrap-sass', '3.4.1'
 gem 'rexml'
 
-# Image upload validation and image processing
+# Image upload validation
 gem 'active_storage_validations', '0.9.2'
-gem 'image_processing', '1.9.3'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
@@ -31,7 +30,7 @@ gem 'will_paginate',           '3.3.0'
 gem 'bootstrap-will_paginate', '1.0.0'
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
