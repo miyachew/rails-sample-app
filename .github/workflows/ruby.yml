@@ -31,6 +31,6 @@ jobs:
     - name: add yarn and yarn install
       uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: install # will run `yarn install` command
+        cmd: install --ignore-engines # will run `yarn install` command
     - name: Run tests
       run: bundle exec rake
